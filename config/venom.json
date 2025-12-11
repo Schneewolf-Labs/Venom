@@ -1,0 +1,28 @@
+{
+  "crawler": {
+    "maxDepth": 2,
+    "rateLimit": 1000,
+    "concurrency": 3,
+    "timeout": 30000,
+    "respectRobotsTxt": true,
+    "userAgent": "Venom/1.0 (+https://github.com/venom-crawler)",
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "fullPage": true,
+    "maxUrlsPerDomain": 100,
+    "allowedDomains": [],
+    "blockedDomains": []
+  },
+  "captioning": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-20250514",
+    "maxTokens": 1024,
+    "includeHtml": true,
+    "includeCss": false
+  },
+  "storage": {
+    "dataDir": "./data",
+    "dbPath": "./data/venom.db",
+    "maxScreenshotSize": 10485760
+  }
+}
