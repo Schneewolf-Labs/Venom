@@ -1,0 +1,43 @@
+{
+  "name": "venom-web-crawler",
+  "version": "1.0.0",
+  "description": "A web crawler that screenshots websites and generates captions using vision-language models",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "crawl": "tsx src/index.ts crawl",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "web-crawler",
+    "screenshot",
+    "vlm",
+    "vision-language-model",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "better-sqlite3": "^11.5.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "p-queue": "^8.0.1",
+    "playwright": "^1.48.0",
+    "robots-parser": "^3.0.1",
+    "winston": "^3.15.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.8.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
